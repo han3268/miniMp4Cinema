@@ -1,0 +1,68 @@
+.userBackdrop{
+  margin-top: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #FFF;
+  position: relative;
+  height: 300px;
+  background: #EEE url(http://ww3.sinaimg.cn/large/0069qWFHgw1ewcbnu0az2j30s209qgoq.jpg) no-repeat ;
+  background-size:100%;
+  text-align: center;
+}
+.userBackdrop>div{
+  padding-top: 60px;
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  text-align: center;
+  height: 300px;
+}
+.userBackdrop img{
+  width: 80px;
+  height: 80px;
+  border-radius: 5px ;
+}
+.userBackdrop>div>div{
+  margin-top: 10px;
+
+}
+.userBackdrop>div>div>span{
+  padding: 2px 15px;
+  border-radius: 2px;
+  background: #DDD;
+  color: #555;
+}
+.panel{
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.panel .panel-title{
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  background-color: #F5F5F5;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #cdcdcd;
+}
+.panel .panel-subject{
+  font-size: 14px;
+  padding: 8px 15px;
+  background-color: #fff;
+}
+.userEmail>span{
+  color: #14bc0f;
+  font-weight: bold;
+}
+.input-block{
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background: #fff none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

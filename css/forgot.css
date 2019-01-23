@@ -1,0 +1,21 @@
+body{
+  background: rgb(90,90,90) url(../img/pzk.jpg) no-repeat fixed top;
+  background-size: 100% 100%;
+}
+.main-box{
+  margin: 8% auto 0;
+  background: #fff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 2px;
+}
+body h3{
+  text-align: center;
+}
+.alert-info{
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  font-size: 14px;
+}
+

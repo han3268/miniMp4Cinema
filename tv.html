@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery-3.2.1.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <link rel="stylesheet" href="./css/basics.css">
+  <link rel="stylesheet" href="./css/movie.css">
+</head>
+<body>
+  <header>
+    <div class="mynav">
+      <div class="navbar section">
+        <ul class="d-flex nav nav-my">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="movie.html">电影</a></li>
+          <li  class="active"><a href="tv.html">电视剧</a></li>
+          <li><a href="#">豆瓣Top250</a></li>
+          <li><a href="#">新热Top50</a></li>
+        </ul>
+        <ul class="d-flex nav nav-my">
+          <li><a href="#">登录</a></li>
+          <li><a href="#">注册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="navbar section">
+        <div><a class="logo" href="#"></a> </div>
+        <div>
+          <form>
+            <input class="search-box" type="text" placeholder="影视名称"><button class="search-but">搜索</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section">
+    <div class="screen">
+      <div class="tags d-flex">
+        <div class="title font-weight-bold">电影筛选：</div>
+      </div>
+      <div class="tags d-flex">
+        <div class="title">年份：</div>
+        <div class="tag">
+          <a href="/movie/" class="tag active" data-value="全部">全部</a>
+          <a href="/movie/?year=2017"  data-value="2017">2017</a>
+          <a href="/movie/?year=2016"  data-value="2016">2016</a>
+          <a href="/movie/?year=2015"  data-value="2015">2015</a>
+          <a href="/movie/?year=2014"  data-value="2014">2014</a>
+          <a href="/movie/?year=2013"  data-value="2013">2013</a>
+          <a href="/movie/?year=2012"  data-value="2012">2012</a>
+          <a href="/movie/?year=2011"  data-value="2011">2011</a>
+          <a href="/movie/?year=2010"  data-value="2010">2010</a>
+          <a href="/movie/?year=2009"  data-value="2009">2009</a>
+          <a href="/movie/?year=2008"  data-value="2008">2008</a>
+          <a href="/movie/?year=2007"  data-value="2007">2007</a>
+          <a href="/movie/?year=2006"  data-value="2006">2006</a>
+          <a href="/movie/?year=2005"  data-value="2005">2005</a>
+          <a href="/movie/?year=ten_years_ago"  data-value="更早">更早以前</a>
+        </div>
+      </div>
+      <div class="tags d-flex">
+        <div class="title">评分：</div>
+        <div class="tag">
+          <a href="/movie/" class=" active" data-value="全部">全部</a>
+          <a href="/movie/?rating=10"data-value="10分以下">10分以下</a>
+          <a href="/movie/?rating=9"  data-value="9分以下">9分以下</a>
+          <a href="/movie/?rating=8"  data-value="8分以下">8分以下</a>
+          <a href="/movie/?rating=7"  data-value="7分以下">7分以下</a>
+          <a href="/movie/?rating=6"  data-value="6分以下">6分以下</a>
+        </div>
+      </div>
+      <div class="tags d-flex">
+        <div class="title">国家：</div>
+        <div class="tag">
+          <a href="/movie/" class="active" data-value="全部">全部</a>
+          <a href="/movie/?country=中国"  data-value="中国">中国</a>
+          <a href="/movie/?country=美国"  data-value="美国">美国</a>
+          <a href="/movie/?country=日本"  data-value="日本">日本</a>
+          <a href="/movie/?country=韩国"  data-value="韩国">韩国</a>
+          <a href="/movie/?country=印度"  data-value="印度">印度</a>
+          <a href="/movie/?country=法国"  data-value="法国">法国</a>
+          <a href="/movie/?country=泰国"  data-value="泰国">泰国</a>
+          <a href="/movie/?country=英国"  data-value="英国">英国</a>
+          <a href="/movie/?country=俄罗斯"  data-value="俄罗斯">俄罗斯</a>
+          <a href="/movie/?country=加拿大"  data-value="加拿大">加拿大</a>
+          <a href="/movie/?country=意大利"  data-value="意大利">意大利</a>
+        </div>
+      </div>
+      <div class="tags d-flex">
+        <div class="title">类型：</div>
+        <div class="tag">
+          <a href="/movie/" class=" active" data-value="全部">全部</a>
+          <a href="/movie/?tag=传记" data-value="传记">传记</a>
+          <a href="/movie/?tag=喜剧" data-value="喜剧">喜剧</a>
+          <a href="/movie/?tag=剧情" data-value="剧情">剧情</a>
+          <a href="/movie/?tag=枪战" data-value="枪战">枪战</a>
+          <a href="/movie/?tag=恐怖" data-value="恐怖">恐怖</a>
+          <a href="/movie/?tag=励志" data-value="励志">励志</a>
+          <a href="/movie/?tag=动画" data-value="动画">动画</a>
+          <a href="/movie/?tag=歌舞" data-value="歌舞">歌舞</a>
+          <a href="/movie/?tag=罪案" data-value="罪案">罪案</a>
+          <a href="/movie/?tag=偶像" data-value="偶像">偶像</a>
+          <a href="/movie/?tag=悬疑" data-value="悬疑">悬疑</a>
+          <a href="/movie/?tag=爱情" data-value="爱情">爱情</a>
+          <a href="/movie/?tag=惊悚" data-value="惊悚">惊悚</a>
+          <a href="/movie/?tag=综艺" data-value="综艺">综艺</a>
+          <a href="/movie/?tag=纪录" data-value="纪录">纪录</a>
+          <a href="/movie/?tag=青春" data-value="青春">青春</a>
+          <a href="/movie/?tag=科幻" data-value="科幻">科幻</a>
+          <a href="/movie/?tag=冒险" data-value="冒险">冒险</a>
+          <a href="/movie/?tag=魔幻" data-value="魔幻">魔幻</a>
+          <a href="/movie/?tag=丧尸" data-value="丧尸">丧尸</a>
+          <a href="/movie/?tag=动作" data-value="动作">动作</a>
+          <a href="/movie/?tag=幻想" data-value="幻想">幻想</a>
+          <a href="/movie/?tag=战争" data-value="战争">战争</a>
+          <a href="/movie/?tag=情色" data-value="情色">情色</a>
+          <a href="/movie/?tag=血腥" data-value="血腥">血腥</a>
+          <a href="/movie/?tag=西部" data-value="西部">西部</a>
+          <a href="/movie/?tag=童话" data-value="童话">童话</a>
+          <a href="/movie/?tag=暴力" data-value="暴力">暴力</a>
+          <a href="/movie/?tag=古装" data-value="古装">古装</a>
+          <a href="/movie/?tag=灾难" data-value="灾难">灾难</a>
+          <a href="/movie/?tag=谍战" data-value="谍战">谍战</a>
+          <a href="/movie/?tag=生活" data-value="生活">生活</a>
+          <a href="/movie/?tag=讽刺" data-value="讽刺">讽刺</a>
+          <a href="/movie/?tag=其他" data-value="其他">其他</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="movie-box">
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-item ">
+          <div class="movie-item-box">
+            <div class="movie-img">
+              <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+              <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+            </div>
+            <div class="meta">
+              <a href="#">最后一个男孩</a>
+              <div>类型：剧情</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="paging ">
+      <ul class="pagination d-flex ">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+      <div>5/15页</div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="section ">
+      <div class="row">
+        <div class="col-4">
+          <p>免责声明：</p>
+          <p>本网站所有内容都是靠程序在互联网上自动搜集而来，仅供测试和学习交流。若侵犯了您的权益，请发邮件通知站长。</p>
+        </div>
+        <div class="col-4">
+          <p>联系方式：</p>
+          <p>邮箱：han3268@outlok.com</p>
+        </div>
+        <div class="col-4">
+          <p> Mini.mp4 · VERSION: 1.5.3 </p>
+
+        </div>
+      </div>
+      <div>
+        友情链接：
+        <a href="#">百度</a>
+        <a href="#">搜狗</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

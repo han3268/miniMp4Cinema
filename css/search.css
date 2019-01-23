@@ -1,0 +1,90 @@
+.latelySearch{
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+.latelySearch>h5{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: 0 15px;
+  color: #515151;
+  border-bottom: 2px solid #eeeeee;
+
+}
+.jumbotron{
+  margin: 15px 0;
+  background-color: #FFFFFF;
+  padding: 32px 32px;
+  color: grey;
+}
+.movie-box {/** 首页是用的bootstrap写的d-flex 其他页面写这个  多余的换行不缩小 **/
+  /*margin-top: 10px;*/
+  display: flex;
+  flex-wrap:wrap;
+}
+.movie-box .movie-item{
+  margin-top: 15px;
+}
+
+.searchList{
+  margin-top: 15px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.searchList .thumbnail img{
+
+  border: 2px solid #eee;
+  border-radius: 4px;
+  width: 100%;
+}
+
+
+.searchList .info  a{
+  margin-left: 15px;
+  color: #337ab7;
+  text-decoration: none !important;
+  font-size: 18px;
+  border: 0;
+  width: 100%;
+}
+.searchList .info  a>span{
+  display: inline-block;
+  padding: 0 5px;
+  color: #FFFFFF;
+  background-color: #679C21;
+  margin: 2px 2px 2px 10px;
+  font-size: 12px;
+  /*vertical-align:super;*//*上标*/
+}
+.searchList .info  ul{
+  margin-top: 15px;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.searchList .info  ul a{
+  color: #337ab7;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+.searchList .info .intro{
+  display: inline-block;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 14px;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 5px;
+}
+/*.searchList .graded span{*/
+  /*display: inline-block;*/
+  /*padding: 15px;*/
+  /*font-size: 32px;*/
+  /*background: #679C21;*/
+  /*color: #fff;*/
+/*}*/
+/*.graded{*/
+  /*margin: auto;*/
+  /*text-align: center;*/
+/*}*/

@@ -1,0 +1,174 @@
+.mainBody{
+  border-radius: 3px;
+  overflow: hidden;
+  border-top: 5px solid #07A7E1;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  color: #777;
+}
+.mainBody .navigation .breadcrumb{
+ margin: 0;
+}
+.mainBody .navigation .breadcrumb a{
+  color: #337ab7;
+  text-decoration: none;
+}
+.movieInfo .Infoimg img{
+  border-radius: 3px;
+  width: 100%;
+}
+.movieInfo .intro {
+  padding-left:15px ;
+  background: #f5f5f5
+}
+.movieInfo .intro h3 {
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bolder;
+  color: green;
+}
+.movieInfo .intro ul {
+  margin-bottom: 5px;
+  list-style-type: none;
+  font-size: 12px;
+}
+.movieInfo .intro ul li{
+  margin-top: 5px;
+
+}
+.mainBody .play{
+  padding: 5px 15px 5px 15px;
+}
+#videoPlay{
+  border-radius: 5px;
+  width: 100%;
+}
+
+.movieInfo .episode{
+  padding-top: 5px;
+  background: #f5f5f5
+}
+.movieInfo .episode .episode-title{
+  color:  #07A7E1;
+  margin:0 0 5px 10px ;
+  padding: 2px 0 2px 10px;
+  font-size: 16px;
+  border-left: 4px solid green;
+}
+.movieInfo .episode>div{
+  padding: 2px 2px 2px 10px;
+}
+.episode-box>div{
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+.movieInfo .episode>div a ,.episode-box>div a{
+  display: inline-block;
+  padding: 0.2em 8px;
+  border-radius: 2px;
+  color: #888;
+  line-height: 1.5;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  margin: 6px 1px;
+  text-decoration: none;
+}
+.movieInfo .episode>div a.active ,.episode-box>div a.active{
+  color: #FFF;
+  background: green;
+}
+.movieInfo .episode>div a:hover ,.episode-box>div a:hover{
+  text-decoration: none;
+  background: green;
+  color: #FFF;
+}
+
+
+.abstract>p{
+  text-indent: 25px;
+  color: #666;
+  background-color: #f5f5f5;
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+
+.guessing .guessing-main , .comment .comment-info{
+  margin: 0 20px;
+}
+.comment .comment-info{
+  margin-right: 10px;
+}
+.comment .comment-info .no-comment{
+  text-align: center;
+  font-size: 14px;
+  border: 2px dashed #CCC;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.details-title {
+  display: block;
+  margin:20px 0 10px 20px ;
+  padding: 2px 0 2px 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  border-left: 4px solid #09C878;
+}
+.comment-box{
+  padding-top: 5px;
+  border-top: 1px dashed #CCC;
+  border-bottom: 1px dashed #CCC ;
+}
+.comment .comment-box img{
+  margin-top: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+}
+.comment .comment-box .comment-info .uname{
+  font-weight: bold;
+  color: #257494;
+  font-size: 14px;
+}
+.comment .comment-box .comment-info .comment-time{
+  margin-left: 10px;
+  font-weight: normal;
+  color: #636363;
+  font-size: 12px;
+}
+.comment .comment-box .comment-info p{
+    margin-bottom: 5px;
+}
+.comment .comment-box  .comment-evaluate{
+  margin-top: -2px;
+  margin-bottom: 5px;
+}
+
+.comment .comment-box  .comment-evaluate a{
+  color: #337ab7;
+  text-decoration: none;
+}
+.reply-box{
+  padding:20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  margin: 20px 20px 30px;
+
+}
+.movieHot a{
+  /*text-decoration: none;*/
+  color:#337ab7 ;
+}
+.reply-box h6{
+  padding-bottom:5px ;
+  border-bottom: 1px solid #bfbfbf;
+  margin-bottom: 15px;
+}
+.reply-box textarea{
+  width: 100%;
+  height: 80px;
+  margin-bottom: 15px;
+}
+/*#333;*/
