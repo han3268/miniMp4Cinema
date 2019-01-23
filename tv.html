@@ -13,19 +13,20 @@
   <link rel="stylesheet" href="./css/movie.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="mynav">
       <div class="navbar section">
         <ul class="d-flex nav nav-my">
-          <li><a href="index.html">首页</a></li>
+          <li class="active" ><a href="index.html">首页</a></li>
           <li><a href="movie.html">电影</a></li>
-          <li  class="active"><a href="tv.html">电视剧</a></li>
-          <li><a href="#">豆瓣Top250</a></li>
-          <li><a href="#">新热Top50</a></li>
+          <li><a href="tv.html">电视剧</a></li>
+          <li><a href="douban_top.html">豆瓣Top250</a></li>
+          <li><a href="hotest_top.html">新热Top50</a></li>
         </ul>
-        <ul class="d-flex nav nav-my">
-          <li><a href="#">登录</a></li>
-          <li><a href="#">注册</a></li>
+        <ul class="member d-flex nav nav-my">
+          <li class="login"><a href="login.html">登录</a></li>
+          <li class="login"><a href="register.html">注册</a></li>
+          <li class="uname"><a href="#">han3268</a></li>
         </ul>
       </div>
     </div>
@@ -34,7 +35,7 @@
         <div><a class="logo" href="#"></a> </div>
         <div>
           <form>
-            <input class="search-box" type="text" placeholder="影视名称"><button class="search-but">搜索</button>
+            <input class="search-box" type="text" placeholder="影视名称"><button onclick="searchBut()" class="search-but">搜索</button>
           </form>
         </div>
       </div>
@@ -406,27 +407,8 @@
   </section>
 
   <footer class="footer">
-    <div class="section ">
-      <div class="row">
-        <div class="col-4">
-          <p>免责声明：</p>
-          <p>本网站所有内容都是靠程序在互联网上自动搜集而来，仅供测试和学习交流。若侵犯了您的权益，请发邮件通知站长。</p>
-        </div>
-        <div class="col-4">
-          <p>联系方式：</p>
-          <p>邮箱：han3268@outlok.com</p>
-        </div>
-        <div class="col-4">
-          <p> Mini.mp4 · VERSION: 1.5.3 </p>
 
-        </div>
-      </div>
-      <div>
-        友情链接：
-        <a href="#">百度</a>
-        <a href="#">搜狗</a>
-      </div>
-    </div>
   </footer>
+  <script src="./js/footer.js"></script>
 </body>
 </html>
