@@ -22,7 +22,7 @@ $(function(){
 
       $(".search-box").on("click",function(e){
         e.preventDefault()
-        console.log($('.mynav ul>li'))
+        console.log("111")
       })
       $(".search-but").click(function(event){
         event.preventDefault();
