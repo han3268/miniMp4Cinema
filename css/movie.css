@@ -36,11 +36,10 @@
 }
 
 .movie-box {
-  /*margin-top: 10px;*/
   display: flex;
   flex-wrap:wrap;/* 不压缩 换行显示 */
 }
 .movie-box .movie-item{
   margin-top: 10px;
-  width: 16.666%;/*电影显示6个*/
+  width: 16.666%;/*16.666电影显示6个*/
 }

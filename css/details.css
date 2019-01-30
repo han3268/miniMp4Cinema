@@ -172,3 +172,9 @@
   margin-bottom: 15px;
 }
 /*#333;*/
+.movie-box .movie-item{
+  width: 20%;/*电影显示5个*/
+}
+.movie-box .movie-img>img{
+  height: 210px;
+}

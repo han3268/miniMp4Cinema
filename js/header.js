@@ -19,14 +19,16 @@ $(function(){
         }
       }
 
-
       $(".search-box").on("click",function(e){
         e.preventDefault()
-        console.log("111")
+        //console.log("编辑框")
       })
+ 
+
       $(".search-but").click(function(event){
         event.preventDefault();
-        console.log("111")
+        var q =  $(".search-box").val()
+        window.location.href="./search.html?q=" + q
       });
     }
   })

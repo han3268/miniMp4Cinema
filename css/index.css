@@ -35,7 +35,7 @@
   color: #333;
   font-size: 16px;
   padding: 4px 10px 4px 15px;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 .index-title a{
   font-size: 13px;
@@ -83,4 +83,15 @@
   border: none;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+.indexF1 .movie-box .movie-item{
+  width: 20%;/*电影显示6个*/
+}
+
+.movie-box .movie-img>img{
+  height: 230px;
+}
+.indexF1 .movie-box .movie-img>img{
+  height: 210px;
 }
