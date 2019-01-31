@@ -159,7 +159,7 @@ $.ajax({
         css=""
       }
       var html = `
-      <a href="./details.html?vid=${item.vid}"><span ${css}>${i+1}</span>${item.vname}</a>
+      <a href="./search.html?q=${item.vname}"><span ${css}>${i+1}</span>${item.vname}</a>
       `
       htmlBox += html
       i++

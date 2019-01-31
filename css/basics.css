@@ -209,24 +209,29 @@ footer a {
   display: flex;
   justify-content: center;
 }
+
 .paging>div{
   margin-left: 20px;
   padding: 0.5rem 0.75rem;
   line-height: 1.25;
   border-left: 2px dotted #ddd ;
 }
+.paging>ul {
+  cursor:no-drop  !important;
+}
 .paging>ul{
   margin-bottom: 0;
 }
-.pagination .page-item a{
+
+.paging .pagination .page-item a{
   color: #337ab7;
 }
-.pagination .page-item.active a{
+.paging .pagination .page-item.active a{
   color: #fff;
   background-color:#337ab7 ; 
 }
 
-/*分页*/
+/*分页结束*/
 
 .extra{/* 小标签 */
   color: #428bca;

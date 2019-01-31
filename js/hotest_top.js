@@ -61,8 +61,8 @@ $(function(){
         </div>`
         htmlBox += html
       }
+      $(".paging").before(htmlBox); //替换 
       
-       $(".paging").before(htmlBox); //替换 
     }
   })
 
