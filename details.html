@@ -11,35 +11,13 @@
   <script src="./js/bootstrap.js"></script>
   <link rel="stylesheet" href="./css/basics.css">
   <link rel="stylesheet" href="./css/details.css">
+  <script src="./dplayer/hls.min.js"></script>
+  <script src="./dplayer/DPlayer.min.js"></script>
+  <link href="./dplayer/DPlayer.min.css" rel="stylesheet">
 </head>
 <body>
   <header id="header">
-    <div class="mynav">
-      <div class="navbar section">
-        <ul class="d-flex nav nav-my">
-          <li class="active" ><a href="index.html">首页</a></li>
-          <li><a href="movie.html">电影</a></li>
-          <li><a href="tv.html">电视剧</a></li>
-          <li><a href="douban_top.html">豆瓣Top250</a></li>
-          <li><a href="hotest_top.html">新热Top50</a></li>
-        </ul>
-        <ul class="member d-flex nav nav-my">
-          <li class="login"><a href="login.html">登录</a></li>
-          <li class="login"><a href="register.html">注册</a></li>
-          <li class="uname"><a href="#">han3268</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bg-white">
-      <div class="navbar section">
-        <div><a class="logo" href="#"></a> </div>
-        <div>
-          <form>
-            <input class="search-box" type="text" placeholder="影视名称"><button onclick="searchBut()" class="search-but">搜索</button>
-          </form>
-        </div>
-      </div>
-    </div>
+    
   </header>
 <section class="section">
   <div class="row mt-3">
@@ -47,194 +25,85 @@
       <div class="mainBody">
         <div class="navigation">
           <ul class="breadcrumb bg-transparent">
-            <li class="breadcrumb-item"><a href="#">首页</a></li>
-            <li class="breadcrumb-item"><a href="#">电影</a></li>
-            <li class="breadcrumb-item"><a href="#">喜剧</a></li>
-            <li class="breadcrumb-item">肖申克的救赎</li>
+            <li class="breadcrumb-item"><a href="index.html">首页</a></li>
           </ul>
         </div>
-        <div class="movieInfo ">
-          <div class="d-flex">
-            <div class="col-4">
-              <div class="Infoimg"><img src="./img/movie/1ncsglwpns1w.jpg" alt=""></div>
-            </div>
-            <div class="col-8 pl-0">
-              <div class="intro">
-                <h3>肖申克的救赎<span>别名</span></h3>
-                <ul>
-                  <li>上映时间：2018-12-30</li>
-									<li>影片时长：144 Min</li>
-                  <li>导演：汤姆·森兰</li>
-                  <li>主演：盖尔·加朵,克里斯·派恩,康妮·尼尔森,罗宾·怀特,丹尼·赫斯顿</li>
-                  <li>类型：动作片</li>
-                  <li>制片地区：英国 / 美国</li>
-                  <li>语言：英语</li>
-                  <li>其他：</li>
-                  <li>本站更新：2019-01-21 </li>
-                </ul>
-              </div>
-              <div class="episode">
-                <h2 class="episode-title">剧集</h2>
-                <div>
-                  <a class="active" href="#">第一集</a>
-                  <a href="#">第二集</a>
-                  <a href="#">第三集</a>
-                  <a href="#">第四集</a>
-                  <a href="#">第五集</a>
-                  <a href="#">第六集</a>
-                </div>
-              </div>
-            </div>
+        <div class="videoInfo "><!-- 影片详情 -->
+
+        </div>
+
+        <div data-OnLine="play" >
+          <div class="play">
+            <!-- <video id="videoPlay" controls preload="auto" src="http://hd.yinyuetai.com/uploads/videos/common/80B30160F7875B25C72CC36EC68AF6DE.mp4"></video> -->
+            <div class="d-none" id="videoPlay"></div>
           </div>
-        </div>
-        <div class="play">
-          <video id="videoPlay" autoplay controls preload="auto" src="http://hd.yinyuetai.com/uploads/videos/common/9CAE01686FD50505D2451789BF54811F.mp4"></video>
-        </div>
           <div class="episode-box">
-            <h2 class="details-title">剧集</h2>
+            <h2 class="details-title">剧集<span></span></h2>
             <div>
-              <a class="active" href="#">第一集</a>
-              <a href="#">第二集</a>
-              <a href="#">第三集</a>
-              <a href="#">第四集</a>
-              <a href="#">第五集</a>
-              <a href="#">第六集</a>
+              <a href="#">第一集</a>
             </div>
           </div>
-          <div class="abstract">
-            <h2 class="details-title">电影介绍</h2>
-            <p>本故事通过一位中年男子蒯闻圣在创业初期正处于起步中，事业和爱情却到了人生的瓶颈，前女友杨虹与蒯闻圣不欢而散，此时的蒯闻圣生活开始萎靡不振，在一个偶然的机会认识了山水策划公司的冷梧研，再次燃起了蒯闻圣对未来的希望，然而，冷梧妍却患上绝症，在真爱面前现实很骨感，蒯闻圣已经倾尽所有，在危难之际大军伸出了援手，可是在病魔面前，生命是脆弱的，年纪轻轻的冷梧研就这样烟消玉陨，从此天人相隔，冷梧研给蒯闻圣的遗言中写到一定要把我身体里的器官捐献给国家给那些需要的人，虽然冷梧妍走了，但她在尘世间的欢声笑语仍在空中回荡，因为冷梧妍把她对祖国的这份大爱，播撒在这片热土上，继续传递着。
-            </p>
-          </div>
-          <div class="guessing">
-            <h2 class="details-title">猜你喜欢</h2>
-            <div class="guessing-main">
-              <div class="movie-box d-flex">
-                <div class="movie-item ">
-                  <div class="movie-item-box">
-                    <div class="movie-img">
-                      <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
-                      <img src="./img/movie/n0t6pmjp9js3.jpg" alt="">
-                    </div>
-                    <div class="meta">
-                      <a href="#">最后一个男孩最后一个男孩</a>
-                      <div>类型：剧情</div>
-                    </div>
+        </div>
+
+        <div class="abstract">
+          <h2 class="details-title">电影介绍</h2>
+          <p>
+          </p>
+        </div>
+        <div class="guessing">
+          <h2 class="details-title">猜你喜欢</h2>
+          <div class="guessing-main">
+            <div class="movie-box d-flex">
+              <!-- x5 -->
+              <!-- <div class="movie-item ">
+                <div class="movie-item-box"  title="最后一个男孩" >
+                  <div class="movie-img">
+                    <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+                    <img src="./img/movie/4ciolpste3m4.jpg" alt="">
+                  </div>
+                  <div class="meta">
+                    <a href="#">最后一个男孩<span>--8.8分</span></a>
+                    <div>类型：剧情</div>
                   </div>
                 </div>
-                <div class="movie-item ">
-                  <div class="movie-item-box">
-                    <div class="movie-img">
-                      <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
-                      <img src="./img/movie/n0t6pmjp9js3.jpg" alt="">
-                    </div>
-                    <div class="meta">
-                      <a href="#">最后一个男孩</a>
-                      <div>类型：剧情</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="movie-item ">
-                  <div class="movie-item-box">
-                    <div class="movie-img">
-                      <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
-                      <img src="./img/movie/n0t6pmjp9js3.jpg" alt="">
-                    </div>
-                    <div class="meta">
-                      <a href="#">最后一个男孩</a>
-                      <div>类型：剧情</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="movie-item ">
-                  <div class="movie-item-box">
-                    <div class="movie-img">
-                      <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
-                      <img src="./img/movie/n0t6pmjp9js3.jpg" alt="">
-                    </div>
-                    <div class="meta">
-                      <a href="#">最后一个男孩</a>
-                      <div>类型：剧情</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="movie-item ">
-                  <div class="movie-item-box">
-                    <div class="movie-img">
-                      <a href="#"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
-                      <img src="./img/movie/n0t6pmjp9js3.jpg" alt="">
-                    </div>
-                    <div class="meta">
-                      <a href="#">最后一个男孩</a>
-                      <div>类型：剧情</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> -->
+
             </div>
           </div>
-          <div class="comment">
-            <h2 class="details-title">影片评论</h2>
-            <div class="comment-info">
-              <div class="no-comment">
-                暂无评论
-              </div>
+        </div>
 
-              <div class="comment-box row">
-                <div class="col-1 pr-0">
-                  <img src="./img/user/c7.jpg" alt="">
-                </div>
-                <div class="col-11 pl-0">
-                  <div class="comment-info">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="uname">han3268<span class="comment-time">2019-1-22 19:33:01</span></div>
-                      <div class="comment-tower">#01</div>
-                    </div>
-                    <p>让他等着张子悦醒来后两人好谈判。可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走</p>
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <div class="comment-evaluate"><a class="comment-praise" href="#">赞（6）</a> | <a class="comment-trample" href="#">踩（6）</a></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="comment-box row">
-                <div class="col-1 pr-0">
-                  <img src="./img/user/c7.jpg" alt="">
-                </div>
-                <div class="col-11 pl-0">
-                  <div class="comment-info">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="uname">han3268<span class="comment-time">2019-1-22 19:33:01</span></div>
-                      <div class="comment-tower">#02</div>
-                    </div>
-                    <p>让他等着张子悦醒来后两人好谈判。可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走</p>
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <div class="comment-evaluate"><a class="comment-praise" href="#">赞（6）</a> | <a class="comment-trample" href="#">踩（6）</a></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="comment-box row">
-                <div class="col-1 pr-0">
-                  <img src="./img/user/c7.jpg" alt="">
-                </div>
-                <div class="col-11 pl-0">
-                  <div class="comment-info">
-                    <div class="d-flex justify-content-between mb-2">
-                      <div class="uname">han3268<span class="comment-time">2019-1-22 19:33:01</span></div>
-                      <div class="comment-tower">#03</div>
-                    </div>
-                    <p>让他等着张子悦醒来后两人好谈判。可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走</p>
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <div class="comment-evaluate"><a class="comment-praise" href="#">赞（6）</a> | <a class="comment-trample" href="#">踩（6）</a></div>
-                  </div>
-                </div>
-              </div>
+        <div class="comment">
+          <h2 class="details-title">影片评论</h2>
+          <div class="comment-info">
+            <div class="no-comment">
+              暂无评论
             </div>
+
+            <!-- <div class="comment-box row">
+              <div class="col-1 pr-0">
+                <img src="./img/user/c7.jpg" alt="">
+              </div>
+              <div class="col-11 pl-0">
+                <div class="comment-info">
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="uname">han3268<span class="comment-time">2019-1-22 19:33:01</span></div>
+                    <div class="comment-tower">#01</div>
+                  </div>
+                  <p>让他等着张子悦醒来后两人好谈判。可桂洪仁拉着李小敏不让走可桂洪仁拉着李小敏的手不让走可桂洪仁拉着李小敏的手不让走</p>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <div class="comment-evaluate"><a class="comment-praise" href="JavaScript:;"">赞（6）</a> | <a class="comment-trample" href="JavaScript:;"">踩（6）</a></div>
+                </div>
+              </div>
+            </div> -->
+
+
+
+
+
           </div>
+        </div>
+
         <div class="reply-box">
           <h6>评论此影片</h6>
           <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -246,40 +115,25 @@
       <div class="right-box">
         <div class="subtitle"><img  class="icoimg"  src="./img/index/1828.png" alt="信息">电影热度</div>
         <div class="movieHot">
-          <a href="#">0人想看</a> / <a href="#">0人看过</a> / <a href="#">0人喜欢</a>
-        </div>
-      </div>
-      <div class="right-box">
-        <div class="subtitle"><img  class="icoimg"  src="./img/index/1828.png" alt="信息">热门电影</div>
-        <div class="list">
-          <a class="" href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
+          <a href="JavaScript:;">0人想看</a> / <a href="JavaScript:;">0人看过</a> / <a href="JavaScript:;">0人喜欢</a>
         </div>
       </div>
 
       <div class="right-box">
-        <div class="subtitle"><img  class="icoimg"  src="./img/index/1828.png" alt="信息">热门电影</div>
-        <div class="list">
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
-          <a href="#"><span>1</span>无名之辈</a>
+        <div class="subtitle"><img  class="icoimg"  src="./img/index/1828.png" alt="信息">本周精选电影</div>
+        <div class="list" data-rightBox="choiceness" >
+          <!-- <a href="#"><span>1</span>无名之辈</a> -->
         </div>
       </div>
+
+      <div class="right-box">
+        <div class="subtitle"><img  class="icoimg"  src="./img/index/1828.png" alt="信息">豆瓣TOP电影</div>
+        <div class="list" data-rightBox="doubanTop" >
+          <!-- <a href="#"><span>1</span>无名之辈</a> -->
+          
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -287,7 +141,9 @@
 <footer class="footer">
   
 </footer>
+<script src="./js/basics.js"></script>
 <script src="./js/header.js"></script>
 <script src="./js/footer.js"></script>
+<script src="./js/details.js"></script>
 </body>
 </html>

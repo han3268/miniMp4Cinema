@@ -9,7 +9,7 @@ $.ajax({
     var html = 
     `<div class="row mynav-tab">
       <div class="col-8 pr-0">
-        <a href="${resdata[0].Movies_url}"><img src="${resdata[0].img_url}" title="${resdata[0].vname}" alt="${resdata[0].vname}"></a>
+        <a href="./details.html?vid=${resdata[0].Movies_url}"><img src="${resdata[0].img_url}" title="${resdata[0].vname}" alt="${resdata[0].vname}"></a>
       </div>
       <div class="col-4 p-0 ">
         <div class="col-12 "><a href="./details.html?vid=${resdata[0].Movies_url}"><img src="${resdata[0].img_url}" title="${resdata[0].vname}" alt="${resdata[0].vname}"></a></div>
@@ -23,13 +23,11 @@ $.ajax({
     </div>`
     $(html).replaceAll(".mynav-tab"); //替换 
     //替换完成后
-    $(".mynav-tab div img").hover(function(){/*轮播 */
-      $(".mynav-tab>div>a>img").prop("src",this.src)
+    $(".mynav-tab div img").hover(function(){/*替换大图*/
+      $(".mynav-tab>div>a>img").prop("src",this.src).prop("title",this.title)
     })
   }
 })
-
-
 
 $.ajax({
   url:"http://localhost:8080/index/indexF1",
@@ -59,6 +57,7 @@ $.ajax({
     $(".indexF1 .movie-box").append(htmlBox); //替换 
   }
 })
+
 $.ajax({
   url:"http://localhost:8080/index/indexF2",
   type:"get",

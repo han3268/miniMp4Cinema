@@ -55,6 +55,7 @@ $(function(){
         htmlBox += html
       }
       $("[data-douban=data]").html(htmlBox); //替换 
+      
       pagingHtml(res.page,res.pageCount)//公共函数 分页html
       
     }

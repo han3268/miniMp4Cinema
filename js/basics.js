@@ -1,4 +1,5 @@
 function pagingHtml(page,pageCount){
+  //当前页  总页数
   //分页导航
   $("div.paging>div").html(`${page}/${pageCount}页`)//page当前页  pageCount总页数
   var pagemin //最新小开始页
@@ -36,7 +37,7 @@ function pagingHtml(page,pageCount){
     <li class="page-item ${(page-1) < 1?'disabled':''}"><a class="page-link" href="?page=${page-1}"> < </a></li>`
     for(var i=fi ;i <= Count;i++){
       var  pageItem = `
-      <li class="page-item ${page==i?'active':''}"><a class="page-link" href="?page=${i}">${i}</a></li>`
+      <li class="page-item ${page==i?'active disabled':''}"><a class="page-link" href="?page=${i}">${i}</a></li>`
       htmlBox+=pageItem
     }
     //上一页 html 判断 -1 会不会超出
@@ -46,4 +47,24 @@ function pagingHtml(page,pageCount){
     $(".paging ul.pagination").html(htmlBox)//替换html
     return htmlBox
   }
+}
+function videoItem(arr){//遍历视频
+  var htmlBox=``
+  for(let item of arr ){
+    var html = `
+    <div class="movie-item ">
+      <div class="movie-item-box" title="${item.vname}"  >
+        <div class="movie-img">
+          <a href="./details.html?vid=${item.vid}"><div class="movie-show"><img src="./img/movie/0a_player.png"></div></a>
+          <img src="${item.img_url}" alt="">
+        </div>
+        <div class="meta">
+          <a href="./details.html?vid=${item.vid}">${item.vname}<span>--${item.rating}分</span></a>
+          <div>类型:${item.type}</div>
+        </div>
+      </div>
+    </div>`
+    htmlBox += html
+  }
+  return htmlBox
 }
