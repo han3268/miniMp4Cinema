@@ -33,7 +33,7 @@ function pagingHtml(page,pageCount){
     var htmlBox=``
     //上一页 html 判断 -1 会不会超出
     htmlBox+=`
-    ${page > 5?`<li class="page-item "><a class="page-link" href="?page=1">首页</a></li>`:''}
+    ${page > 3?`<li class="page-item "><a class="page-link" href="?page=1">首页</a></li>`:''}
     <li class="page-item ${(page-1) < 1?'disabled':''}"><a class="page-link" href="?page=${page-1}"> < </a></li>`
     for(var i=fi ;i <= Count;i++){
       var  pageItem = `

@@ -24,7 +24,12 @@
 .movie-box .movie-item{
   margin-top: 15px;
 }
-
+/* .movie-box .movie-img>img{
+  height: 280px;
+}
+.movie-box .movie-item{
+  width: 20%;
+} */
 .searchList{
   margin-top: 15px;
   background-color: #FFFFFF;

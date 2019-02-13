@@ -36,6 +36,7 @@ $(function(){
         for(var key of protagonists ){
           protagonist +=`<a target="_blank" href="./search.html?q=${key}">${key}</a>`
         }
+        
         var html=`
         <div class="d-flex doubanList">
           <div class="col-1 top">
