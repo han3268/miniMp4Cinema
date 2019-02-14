@@ -16,7 +16,7 @@ $(function(){
       //seekvname  seekdirector  seekprotagonist
       //需要合并这个数组
       lists = lists.concat(res.data.seekvname,res.data.seekdirector,res.data.seekprotagonist)
-      console.log(lists)
+      // console.log(lists)
 
       var htmlBox=``
       for(var item of lists){
@@ -24,7 +24,7 @@ $(function(){
         var protagonists = item.protagonist.split(",")	
 
         for(var key of protagonists ){
-          protagonistHtml +=`<a target="_blank" href="./search.html?q=${key}">${key}</a>`
+          protagonistHtml +=`<a  href="./search.html?q=${key}">${key}</a>`
         }
 
         var html=`
@@ -36,7 +36,7 @@ $(function(){
             <div class="">
               <a class="font-weight-bold" href="./details.html?vid=${item.vid}">${item.vname} <span>${item.rating}分</span></a>
               <ul>
-                <li>导演：<a target="_blank" href="/search.html?q=${item.director}">${item.director}</a></li>
+                <li>导演：<a  href="/search.html?q=${item.director}">${item.director}</a></li>
                 <li>主演：${protagonistHtml}</li>
                 <li>上映日期：${item.releaseDate}</li>
                 <li class="intro">简介：${item.vintro}</li>
@@ -48,7 +48,7 @@ $(function(){
         </div>`
         htmlBox+=html
       }
-      if(lists.length>1){
+      if(lists.length>0){
         $("section.section").html(htmlBox); //替换 
       }
     }

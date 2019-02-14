@@ -86,7 +86,7 @@ $(function(){
     getreq =`${year}&${rating}&${country}&${tag}&page=${page}`//拼接数据
     console.log(getreq)
     $.ajax({
-      url:`http://localhost:8080/movie`+getreq,
+      url:`http://localhost:8080/tv `+getreq,
       type:"get",
       success:function(res){
         //console.log(res.data)

@@ -35,6 +35,14 @@
   color: #FFF;
 }
 
+.jumbotron{
+  margin: 15px 0;
+  background-color: #FFFFFF;
+  padding: 32px 32px;
+  color: grey;
+  text-align: center;
+}
+
 .movie-box {
   display: flex;
   flex-wrap:wrap;/* 不压缩 换行显示 */

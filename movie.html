@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>在线电影-miniMP4video</title>
   <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <script src="./js/jquery-3.2.1.js"></script>
+  <script src="./js/jq-paginator.min.js"></script>
   <script src="./js/bootstrap.js"></script>
   <link rel="stylesheet" href="./css/basics.css">
   <link rel="stylesheet" href="./css/movie.css">
@@ -19,12 +20,12 @@
   <section class="section">
     <div class="screen">
       <div class="tags d-flex">
-        <div class="title font-weight-bold">电视剧筛选：</div>
+        <div class="title font-weight-bold">电影筛选：</div>
       </div>
       <div class="tags d-flex">
         <div class="title">年份：</div>
         <div class="tag" data-classify="year">
-          <a href="/movie.html?year=all" class="tag active" >全部</a>
+          <a href="/movie.html?year=全部" class="tag active" >全部</a>
           <a href="/movie.html?year=2017" >2017</a>
           <a href="/movie.html?year=2016" >2016</a>
           <a href="/movie.html?year=2015" >2015</a>
@@ -44,18 +45,19 @@
       <div class="tags d-flex">
         <div class="title">评分：</div>
         <div class="tag" data-classify="rating">
-          <a href="/movie.html?rating=all" class=" active" >全部</a>
-          <a href="/movie.html?rating=10">10分以下</a>
-          <a href="/movie.html?rating=9" >9分以下</a>
-          <a href="/movie.html?rating=8" >8分以下</a>
-          <a href="/movie.html?rating=7" >7分以下</a>
-          <a href="/movie.html?rating=6" >6分以下</a>
+          <a href="/movie.html?rating=全部" class="active" >全部</a>
+          <a href="/movie.html?rating=9">9分以上</a>
+          <a href="/movie.html?rating=8">8分以上</a>
+          <a href="/movie.html?rating=7">7分以上</a>
+          <a href="/movie.html?rating=6">6分以上</a>
+          <a href="/movie.html?rating=5">5分以上</a>
+          <a href="/movie.html?rating=4">4分以上</a>
         </div>
       </div>
       <div class="tags d-flex">
         <div class="title">国家：</div>
         <div class="tag" data-classify="country">
-          <a href="/movie.html?country=all" class="active" >全部</a>
+          <a href="/movie.html?country=全部" class="active" >全部</a>
           <a href="/movie.html?country=中国" >中国</a>
           <a href="/movie.html?country=美国" >美国</a>
           <a href="/movie.html?country=日本" >日本</a>
@@ -72,7 +74,7 @@
       <div class="tags d-flex">
         <div class="title">类型：</div>
         <div class="tag" data-classify="tag">
-          <a href="/movie.html?tag=all" class=" active" >全部</a>
+          <a href="/movie.html?tag=全部" class=" active" >全部</a>
           <a href="/movie.html?tag=传记">传记</a>
           <a href="/movie.html?tag=喜剧">喜剧</a>
           <a href="/movie.html?tag=剧情">剧情</a>
@@ -109,29 +111,35 @@
         </div>
       </div>
     </div>
-    <div>
-      <div class="movie-box">
-        <!-- <div class="movie-item ">
-          <div class="movie-item-box">
-            <div class="movie-img">
-              <a href="#"><div class="movie-show"><img src="./img/movie.html0a_player.png"></div></a>
-              <img src="./img/movie.htmln0t6pmjp9js3.jpg" alt="">
-            </div>
-            <div class="meta">
-              <a href="#">最后一个男孩</a>
-              <div>类型：剧情</div>
-            </div>
-          </div>
-        </div> -->
-      </div>
+    <div class="jumbotron d-none">
+      <h2>抱歉，你筛选的内容没有找到！</h2>
+      <b>搜索试试：</b><span>去右上角试试能不能搜索到~</span>
     </div>
+    <div class="movie-box">
+
+
+
+      <!-- <div class="movie-item ">
+        <div class="movie-item-box">
+          <div class="movie-img">
+            <a href="#"><div class="movie-show"><img src="./img/movie.html0a_player.png"></div></a>
+            <img src="./img/movie.htmln0t6pmjp9js3.jpg" alt="">
+          </div>
+          <div class="meta">
+            <a href="#">最后一个男孩</a>
+            <div>类型：剧情</div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
     <div class="paging ">
-      <ul class="pagination d-flex ">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <ul class="pagination d-flex "> <!-- 分页-->
+        <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li>
         <li class="page-item"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li> -->
       </ul>
       <div>5/15页</div>
     </div>
